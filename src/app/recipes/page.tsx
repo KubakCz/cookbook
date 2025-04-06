@@ -1,8 +1,12 @@
+import RecipeCard from "@/components/recipes/RecipeCard";
+import { recipes } from "@/data/recipes";
+
 export default function Recipes() {
   return (
-    <div className="flex flex-col justify-center items-center flex-1">
-      <h1 className="text-6xl">Hello, this is recipes page</h1>
-      <p>There will be many recipes...</p>
+    <div className="flex flex-col p-6 gap-4 w-full">
+      {recipes.map((recipe) => (
+        <RecipeCard key={recipe.id} recipe={recipe} />
+      ))}
     </div>
   );
 }
