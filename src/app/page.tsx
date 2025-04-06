@@ -1,7 +1,8 @@
 export default function Home() {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-      <h1>Hello</h1>
+    <div className="flex flex-col justify-center items-center flex-1">
+      <h1 className="text-6xl">Hello, this is homepage</h1>
+      <p>This is some random text</p>
     </div>
   );
 }
