@@ -16,17 +16,18 @@ export default function HeaderBar() {
       <NavigationMenu className="p-2">
         <NavigationMenuList>
           <NavigationMenuItem>
-            <Link href="/">
+            <Link href="/" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                <div className="flex items-center gap-2">
+                some text
+                {/* <div className="flex items-center gap-2">
                   <CookingPot />
                   <span className="text-xl font-bold">CookBook</span>
-                </div>
+                </div> */}
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/recipes">
+            <Link href="/recipes" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 Recipes
               </NavigationMenuLink>
